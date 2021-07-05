@@ -1,11 +1,9 @@
+#!/usr/bin/env python3
+
 # import the Shrimpy library for crypto exchange websockets
 import shrimpy
-
-
 # input your Shrimpy public and private key
-public_key = '9d...'
-private_key = 'c6...'
-
+from config import shrimpy_public_key, shrimpy_private_key
 
 # a sample error handler, it simply prints the incoming error
 def error_handler(err):
@@ -37,7 +35,7 @@ def handler(msg):
 
 
 # create the Shrimpy websocket client
-api_client = shrimpy.ShrimpyApiClient(public_key, private_key)
+api_client = shrimpy.ShrimpyApiClient(shrimpy_public_key, shrimpy_private_key)
 print(api_client.get_status())
 raw_token = api_client.get_token()
 print(raw_token)
