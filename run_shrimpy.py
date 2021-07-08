@@ -41,6 +41,27 @@ raw_token = api_client.get_token()
 print(raw_token)
 client = shrimpy.ShrimpyWsClient(error_handler, raw_token['token'])
 print(client)
+# supported_exchanges = api_client.get_supported_exchanges()
+# print(supported_exchanges)
+print("Supported Exchanges:") # can be seen at https://dev-api.shrimpy.io/v1/list_exchanges
+print([
+  "binance",
+  "binanceus",
+  "bittrex",
+  "bittrexinternational",
+  "kucoin",
+  "coinbasepro",
+  "poloniex",
+  "kraken",
+  "bibox",
+  "gemini",
+  "huobiglobal",
+  "hitbtc",
+  "bitmart",
+  "bitstamp",
+  "okex",
+  "bitfinex"
+])
 
 # connect to the Shrimpy websocket and subscribe
 client.connect()
