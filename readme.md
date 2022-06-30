@@ -1,6 +1,6 @@
 **Python setup:**
 
-Tested with python3.6. it doesn't work with python 3.7, 3.8 and 3.9 https://github.com/shrimpy-dev/shrimpy-python/issues/20
+Tested with python3.6. it doesn't work with python 3.7, 3.8 and 3.9
 
 Install python3.6
 
